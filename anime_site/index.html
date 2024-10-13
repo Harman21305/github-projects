@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimePhix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="sidebar_container" class="min-h-screen max-h-full w-screen min-w-[300px] bg-zinc-800/75 backdrop-blur-md  absolute top-0 left-0 hidden z-50"> 
+        
+        <div id="sideBar" class="min-h-screen max-w-[300px] bg-zinc-500/40 rounded-r-2xl flex flex-col py-8 items-center gap-3 animate-linearin">
+
+            <button id="sidebarclose" class="w-[250px] flex font-semibold items-center gap-2 text-red-500">
+                <img src="https://img.icons8.com/?size=100&id=39789&format=png&color=FA5252" alt="" class="h-5 w-5">
+                Close Menu</button>
+            <div class="border-[1px] w-5/6 border-black"></div>
+
+            <div class="font-bold text-slate-200 hover:text-purple-300">Home</div>  
+            <div class="border-[1px] w-3/5 border-zinc-800"></div>
+
+            <div class="font-bold text-slate-200 hover:text-purple-300">Subbed Anime</div>
+            <div class="border-[1px] w-3/5 border-zinc-800"></div>
+
+            <div class="font-bold text-slate-200 hover:text-purple-300">Dubbed Anime</div>
+            <div class="border-[1px] w-3/5 border-zinc-800"></div>
+
+            <div class="font-bold text-slate-200 hover:text-purple-300">Most Popular</div>
+            <div class="border-[1px] w-3/5 border-zinc-800"></div>
+
+            <div class="font-bold text-slate-200 hover:text-purple-300">Movies</div>
+            <div class="border-[1px] w-3/5 border-zinc-800"></div>
+
+            <div class="font-bold text-slate-200 hover:text-purple-300">TV Series</div>
+            <div class="border-[1px] w-3/5 border-zinc-800"></div>
+
+
+            <div class="w-full flex flex-col items-center">
+                <div class="font-bold text-slate-200">Genre</div>
+                <div class="w-full grid grid-cols-2 text-center gap-[20px] mt-5">
+                    <span class="text-red-300">Action</span>
+                    <span class="text-green-300">Adventure</span>
+                    <span class="text-cyan-300">Comedy</span>
+                    <span class="text-blue-300">Demons</span>
+                    <span class="text-purple-300">Drama</span>
+                    <span class="text-red-300">Fantasy</span>
+                    <span class="text-green-300">Game</span>
+                    <span class="text-cyan-300">Horror</span>
+                    <span class="text-blue-300">Isekai</span>
+                    <span class="text-purple-300">Magic</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="main_page" class="bg-zinc-800 min-h-screen max-w-screen flex flex-col">
+
+
+        <nav class="max-w-screen h-14 flex justify-between items-center px-4 md:p-8 backdrop-blur-sm bg-gradient-to-b from-zinc-700/90 to-transparent z-20">
+        
+            <button id="sidebaropen" class="h-10 w-10"><img src="https://img.icons8.com/?size=100&id=OTxpMqWbm71F&format=png&color=7950F2" alt=""></button>
+
+            <div class="font-medium text-indigo-600 text-4xl flex gap-3 font-bebas items-center justify-center">
+                AnimePhix
+            </div>
+           
+            <div class="w-32 h-8 bg-violet-700 rounded text-white flex justify-center items-center font-semibold hover:bg-white hover:text-zinc-800">
+                Login/Sign up
+            </div>
+        </nav>
+    
+        <main class="">
+            <div id="slider"  class="w-full h-[100vh] mt-[-70px] overflow-hidden">
+
+                <div id="slider_items">
+    
+                    <div id="OnePiece" class="item object-cover after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t from-zinc-800/90 from-25% to-transparent opacity-100 z-30">
+                        <img src="images/onepiece.jpg" class="">
+                        <div class="content absolute left-[10%] top-[30%] w-[500px] max-w-[80%] z-[1]">
+                            <h2 class="text-white font-semibold text-8xl">OnePiece</h2>
+                            <p class="text-white pl-8">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quod distinctio neque beatae id, ex dolore facilis animi enim, accusamus exercitationem sequi incidunt eaque consequuntur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Demon_slayer" class="item object-cover after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t from-zinc-800/90 from-25% to-transparent hidden">
+                        <img src="images/demon_slayer.jpg" class="">
+                        <div class="content absolute left-[10%] top-[20%] w-[500px] max-w-[80%] z-[1]">
+                            <h2 class="text-white font-semibold text-8xl">Demon Slayer</h2>
+                            <p class="text-white pl-8">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quod distinctio neque beatae id, ex dolore facilis animi enim, accusamus exercitationem sequi incidunt eaque consequuntur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Bleach" class="item object-cover after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t from-zinc-800/90 from-25% to-transparent hidden">
+                        <img src="images/bleash.jpg" class="">
+                        <div class="content absolute left-[10%] top-[30%] w-[500px] max-w-[80%] z-[1]">
+                            <h2 class="text-white font-semibold text-8xl">Bleach</h2>
+                            <p class="text-white pl-8">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quod distinctio neque beatae id, ex dolore facilis animi enim, accusamus exercitationem sequi incidunt eaque consequuntur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="yourName" class="item object-cover after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-t from-zinc-800/90 from-25% to-transparent hidden">
+                        <img src="images/your_name.jpg" class="">
+                        <div class="content absolute left-[10%] top-[30%] w-[500px] max-w-[80%] z-[1]">
+                            <h2 class="text-white font-semibold text-8xl">Your Name</h2>
+                            <p class="text-white pl-8">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quod distinctio neque beatae id, ex dolore facilis animi enim, accusamus exercitationem sequi incidunt eaque consequuntur.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="arrows absolute bottom-[40%] right-[3%] flex flex-col gap-4">
+                    <button id="next" class="h-[50px] w-[50px] flex justify-center bg-slate-950 items-center border-[2px] border-black rounded-full hover:bg-gray-600">
+                        <img src="https://img.icons8.com/?size=100&id=39790&format=png&color=FFFFFF" alt="" class="h-[30px]">
+                    </button>
+                    <button id="prev" class="h-[50px] w-[50px] flex justify-center bg-slate-950 items-center border-[2px] border-black rounded-full hover:bg-gray-600">
+                        <img src="https://img.icons8.com/?size=100&id=39789&format=png&color=FFFFFF" alt="" class="h-[30px]">
+                    </button>
+                </div>
+    
+           </div>
+
+           <div class="flex flex-col items-center gap-5 my-10 mx-[50px]">
+
+                <h2 class="text-2xl font-semibold relative right-[800px] text-violet-600">Most Popular</h2>
+                <div class="flex gap-5  max-w-screen items-center flex-wrap">
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/bcd84731a3eda4f4a306250769675065.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/9cbcf87f54194742e7686119089478f8.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/b51f863b05f30576cf9d85fa9b911bb5.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/db2f3ce7b9cab7fdc160b005bffb899a.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/88bd17534dc4884f23027035d23d74e5.jpg" alt="" class="w-full h-full">
+                    </div>
+                </div>
+           </div>
+
+           <div class="flex flex-col items-center gap-5 my-10 mx-[50px]">
+
+                <h2 class="text-2xl font-semibold relative right-[800px] text-violet-600">Movies</h2>
+                <div class="flex gap-5  max-w-screen items-center flex-wrap">
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/48a7a381cfe141c285adc6cab7f64331.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/f40cf1a43b0d1eb573720c36cb57e3ad.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/1e7b87aeba718fce56dc6d06f080d377.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/3ffea3f5837c00ca78848fde8e7c8277.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/88d7186ebed8856c731b2dd132aaf68a.jpg" alt="" class="w-full h-full">
+                    </div>
+                </div>
+           </div>
+
+           <div class="flex flex-col items-center gap-5 my-10 mx-[50px]">
+
+                <h2 class="text-2xl font-semibold relative right-[800px] text-violet-600">TV Series</h2>
+                <div class="flex gap-5  max-w-screen items-center flex-wrap">
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/2f5abb230576afc9894520bd66de30b5.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/92c79228d8fac9c29829efa2d324fd3b.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/0d1c85319ba4159e75b98541fa9c1488.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/6431fdac6396ff285bf3c69b807a8a9a.jpg" alt="" class="w-full h-full">
+                    </div>
+                    <div class="h-[400px] min-w-[301px] max-w-[300px] bg-slate-400 flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/056d7a03d9caf1d3ab4bafe1e4a7e2ec.jpg" alt="" class="w-full h-full">
+                    </div>
+                </div>
+           </div>
+
+        </main>
+
+
+        <footer class="w-full mt-10 py-[40px] px-[40px] border-t-[1px] border-gray-600 bg-zinc-800 flex flex-col gap-y-[20px]">
+
+            <div id="footer_upper" class="flex gap-x-[30px]">
+                <h2 class="font-medium text-indigo-600 text-4xl flex gap-3 font-bebas items-center justify-center">AnimePhix</h2>
+                <div class="border-[1px] border-gray-700"></div>
+                <div id="social_media" class="flex gap-x-[20px] items-center">
+                    <a id="github" href="https://github.com/Harman21305" class="h-[28px] w-[28px] rounded-full flex justify-center items-center">
+                        <img src="https://img.icons8.com/?size=100&id=YSWCDCSF4H3N&format=png&color=FFFFFF" alt="" class="h-[26px] w-[26px]">
+                    </a>
+
+                    <a id="instagram" href="#" class="h-[28px] w-[28px] rounded-full flex justify-center items-center">
+                        <img src="https://img.icons8.com/?size=100&id=0wr4dYtBFwHA&format=png&color=FFFFFF" alt="" class="h-[26px] w-[26px]">
+                    </a>
+
+                    <a id="linkedin" href="www.linkedin.com/in/harsh-kushwaha-697ba3289" class="h-[28px] w-[28px] rounded-full flex justify-center items-center">
+                        <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" alt="" class="h-[26px] w-[26px]">
+                    </a>
+
+                    <a id="discord" href="#" class="h-[28px] w-[28px] rounded-full flex justify-center items-center">
+                        <img src="https://img.icons8.com/?size=100&id=30888&format=png&color=FFFFFF" alt="" class="h-[26px] w-[26px]">
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-[1px] border-gray-700"></div>
+
+            <div id="lower_footer" class="flex max-w-full justify-center gap-[20px] text-gray-300 text-sm">
+                <p>Terms of Use</p>
+                <p>Contact Us</p>
+                <p>Help Center</p>
+                <p>Privacy</p>    
+            </div>
+            
+            <div>
+                <p class="text-gray-200 text-sm">&copy; All Rights Reserved.</p>
+                <p class="text-gray-200 text-sm">A project Build by Harman21305</p>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+   
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
+
