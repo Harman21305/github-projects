@@ -15,7 +15,7 @@ let type_img = document.getElementById('weather_img')
 console.log(type_img.src)
 
 
-const APIKey = "18061b3977439f2cc14e147c91565622";
+const APIKey = "";
 const APIurl = `https://api.openweathermap.org/data/2.5/weather?units=metric&`;
 
 async function checkWeather(cityName = 'delhi') {
