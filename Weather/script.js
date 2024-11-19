@@ -57,12 +57,6 @@ async function checkWeather(cityName = 'delhi') {
             case 'Clouds':
                 type_img.src = "https://img.icons8.com/?size=100&id=W8fUZZSmXssu&format=png&color=000000"
                 break
-            case 'Mist':
-                type_img.src = ""
-                break
-            case 'Smoke':
-                type_img.src = ""
-                break
             case 'Haze':
                 type_img.src = "https://img.icons8.com/?size=100&id=IL2szZWdo0Bo&format=png&color=000000"
                 break
